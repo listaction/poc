@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>15</maven.compiler.source>
     <maven.compiler.target>15</maven.compiler.target>
-    <JAVA_15_HOME>/Users/kram/Downloads/jdk-15.jdk/Contents/Home</JAVA_15_HOME>
+    <JAVA_15_HOME>~/Downloads/jdk-15.jdk/Contents/Home</JAVA_15_HOME>
   </properties>
 
   <dependencies>
