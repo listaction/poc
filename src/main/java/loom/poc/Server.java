@@ -30,7 +30,7 @@ public class Server {
             server.createContext("/", new TestHandler());
             server.createContext("/read", new ReadHandler());
             server.createContext("/write", new WriteHandler());
-            server.setExecutor(Executors.newUnboundedExecutor(factory));
+            server.setExecutor(Executors.newThreadExecutor(factory));
             server.start();
             log.info("Started at port {}", PORT);
         } catch (Exception e) {
@@ -47,5 +47,9 @@ public class Server {
 
     public static RMap<String, String> getData() {
         return data;
+    }
+
+    public static RedissonClient getRedissonClient() {
+        return redisson;
     }
 }

@@ -1,9 +1,10 @@
 ### dependencies
-Download and untar JDK 15 (https://jdk.java.net/15/) 
+Download and untar JDK 16 loom (https://jdk.java.net/16/) 
+http://jdk.java.net/loom/
 
 ### environment
 ```
-export JAVA_HOME=~/Downloads/jdk-15.jdk/Contents/Home
+export JAVA_HOME=~/Downloads/jdk-16.jdk/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 #### build
@@ -25,5 +26,7 @@ NOTE: check your ulimits and set them to high values before running client or `a
 ```
 ### simple test 
 ```
-ab -n 10000 -c 5 http://localhost:9090/
+curl -d '{"text":"hi", "userId":"3", "deviceId": "AB"}' 'http://localhost:9090/write' -v
+ curl -d '{"userId":"2", "deviceId":"A"}' 'http://localhost:9090/read' -N -o o1.json
+
 ```

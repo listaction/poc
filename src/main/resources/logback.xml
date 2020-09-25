@@ -7,7 +7,7 @@
         </layout>
     </appender>
 
-    <logger name="loom.poc" level="TRACE"/>
+    <logger name="loom.poc" level="INFO"/>
 
 
     <root level="info">

@@ -20,7 +20,7 @@ public class TestClient {
     public static void main(String[] args) {
 
         ThreadFactory factory = Thread.builder().virtual().name("client", 0).factory();
-        Executor executor = Executors.newUnboundedExecutor(factory);
+        Executor executor = Executors.newThreadExecutor(factory);
 
         HttpClient client = HttpClient.newHttpClient();
 

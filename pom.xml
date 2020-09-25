@@ -12,9 +12,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>15</maven.compiler.source>
-    <maven.compiler.target>15</maven.compiler.target>
-    <JAVA_15_HOME>~/Downloads/jdk-15.jdk/Contents/Home</JAVA_15_HOME>
+    <maven.compiler.source>16</maven.compiler.source>
+    <maven.compiler.target>16</maven.compiler.target>
+    <JAVA_16_HOME>~/Downloads/jdk-16.jdk/Contents/Home</JAVA_16_HOME>
   </properties>
 
   <dependencies>
@@ -47,7 +47,7 @@
         <configuration>
           <verbose>true</verbose>
           <fork>true</fork>
-          <executable>${JAVA_15_HOME}/bin/javac</executable>
+          <executable>${JAVA_16_HOME}/bin/javac</executable>
           <compilerArgs>
             --enable-preview
           </compilerArgs>
